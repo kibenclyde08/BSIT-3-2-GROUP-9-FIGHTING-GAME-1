@@ -54,6 +54,27 @@ EditorBuildSettings:
     path: Assets/Scenes/p2special.unity
     guid: c6b0ebf9ef3396f43bccc796c0840d19
   - enabled: 1
-    path: Assets/Scenes/p1lowpunchmissed.unity
-    guid: 0509e33e25b813e4b968e7ceb59af5e4
+    path: Assets/Scenes/p1lpmissed.unity
+    guid: 258da5da9e16fa04d81f70a7ed71704d
+  - enabled: 1
+    path: Assets/Scenes/p1hpmissed.unity
+    guid: 1f5c5c940bb6bf044a68ff10ba3e4c10
+  - enabled: 1
+    path: Assets/Scenes/p1lkmissed.unity
+    guid: a4f69a469847a4b4b9e990df78af451c
+  - enabled: 1
+    path: Assets/Scenes/p1hkmiss.unity
+    guid: 1d070103c2263b34b8dcfbd99b5678a5
+  - enabled: 1
+    path: Assets/Scenes/p2lpmissed.unity
+    guid: de5ad1ca2b4b2e94aaee7d7dfc8eb9d6
+  - enabled: 1
+    path: Assets/Scenes/p2hpmissed.unity
+    guid: f498270815919134a97ec761aa453b5d
+  - enabled: 1
+    path: Assets/Scenes/p2lkmissed.unity
+    guid: 043fee8caade7244ab38bf55f5d0059f
+  - enabled: 1
+    path: Assets/Scenes/p2hkmissed 1.unity
+    guid: 9492d64f6ea683f44b0605b619a1877e
   m_configObjects: {}

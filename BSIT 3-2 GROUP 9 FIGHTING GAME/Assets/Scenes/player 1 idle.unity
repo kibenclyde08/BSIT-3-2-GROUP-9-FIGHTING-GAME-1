@@ -209,7 +209,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 359374504}
         m_TargetAssemblyTypeName: attack, Assembly-CSharp
-        m_MethodName: P1LowKick
+        m_MethodName: P1lowkick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -511,7 +511,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 359374504}
         m_TargetAssemblyTypeName: attack, Assembly-CSharp
-        m_MethodName: P1Special
+        m_MethodName: P1specialattack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -819,7 +819,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 359374504}
         m_TargetAssemblyTypeName: attack, Assembly-CSharp
-        m_MethodName: P1LowPunch
+        m_MethodName: P1lowpunch
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1026,7 +1026,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 359374504}
         m_TargetAssemblyTypeName: attack, Assembly-CSharp
-        m_MethodName: P1HighPunch
+        m_MethodName: P1highpunch
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1165,7 +1165,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 359374504}
         m_TargetAssemblyTypeName: attack, Assembly-CSharp
-        m_MethodName: P1HighKick
+        m_MethodName: P1highkick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
