@@ -20,4 +20,40 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/player 1 idle.unity
     guid: d8e6322545733674f851d59db94f1120
+  - enabled: 1
+    path: Assets/Scenes/player 2 idle.unity
+    guid: b0e3ec5185151d24e96523a7c4642665
+  - enabled: 1
+    path: Assets/Scenes/p1lowpunch.unity
+    guid: 62ce07d54403b144c928e19723d94e36
+  - enabled: 1
+    path: Assets/Scenes/p1highpunch.unity
+    guid: eab7af79e3a926041beed42a30dfcfe3
+  - enabled: 1
+    path: Assets/Scenes/p1lowkick.unity
+    guid: ef8f7fa28abd1864480492a974a1eb80
+  - enabled: 1
+    path: Assets/Scenes/p1highkick.unity
+    guid: 879d802ac8e886f489f2307c299e0294
+  - enabled: 1
+    path: Assets/Scenes/p1special.unity
+    guid: a2b50cc21c33fe0489ea6d076d37d6d0
+  - enabled: 1
+    path: Assets/Scenes/p2lowpunch.unity
+    guid: 25988009425a04e4f8b7a9db9bf9e81a
+  - enabled: 1
+    path: Assets/Scenes/p2highpunch.unity
+    guid: da9a4391cd45b7140ae7a1c266788a97
+  - enabled: 1
+    path: Assets/Scenes/p2lowkick.unity
+    guid: f0b7c134e53a78341bcb1cb59e5e5534
+  - enabled: 1
+    path: Assets/Scenes/p2highkick.unity
+    guid: a9e31913496ab304da6450b30164cacf
+  - enabled: 1
+    path: Assets/Scenes/p2special.unity
+    guid: c6b0ebf9ef3396f43bccc796c0840d19
+  - enabled: 1
+    path: Assets/Scenes/p1lowpunchmissed.unity
+    guid: 0509e33e25b813e4b968e7ceb59af5e4
   m_configObjects: {}
