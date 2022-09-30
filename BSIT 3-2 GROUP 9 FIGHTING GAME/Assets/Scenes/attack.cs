@@ -6,12 +6,27 @@ using UnityEngine.SceneManagement;
 using TMPro;
 public class attack : MonoBehaviour
 {
-
-    // Start is called before the first frame update
-
-
  
- 
+void Update()
+{
+       if(GameManager.P2healthAmount <= 0)
+        {
+           GameManager.P2healthAmount = 0;
+           SceneManager. LoadScene(24);
+        }
+
+        if(GameManager.P1healthAmount <= 0)
+        {
+           GameManager.P1healthAmount = 0;
+           SceneManager. LoadScene(25);
+        }
+
+}
+
+
+
+
+
 public void P1lowpunch(){
     int p1lp, accuracyp1 = 75;
     p1lp = Random.Range(0,100);
@@ -24,6 +39,7 @@ public void P1lowpunch(){
          SceneManager. LoadScene(16);
         Debug.Log("Attack Missed");
      }
+
     }
 
     public void P1highpunch(){
@@ -76,8 +92,7 @@ public void P1specialattack()
 {                   
         GameManager.P2healthAmount -= 25f;
         SceneManager. LoadScene(10);
-        Debug.Log("Attack Success"); 
-    
+        Debug.Log("Attack Success");      
 }    
 
 
@@ -149,6 +164,6 @@ public void P2specialattack()
     
 }   
  
- 
+
  
 }
