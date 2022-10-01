@@ -8,7 +8,7 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     
- 
+
     public static  float P1healthAmount;
     public static float P2healthAmount;
     public static float P1maxhealthAmount;

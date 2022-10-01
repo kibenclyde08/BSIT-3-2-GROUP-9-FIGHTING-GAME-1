@@ -21,4 +21,11 @@ public class Scenechanger : MonoBehaviour
     {
         SceneManager.LoadScene(3);
     }
+
+    public void MenuExitButton()
+{
+     Application.Quit();
+      Debug.Log("Game is exiting");
+}
+
 }

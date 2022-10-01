@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 using TMPro;
 public class attack : MonoBehaviour
 {
+    public Gameoverscript Gameoverscript;
     public Button p1specialbutton;
     public Button p2specialbutton;
-
+   
 void Start()
 {
   p1specialbutton.enabled = false;
@@ -24,12 +25,14 @@ void Update()
         {
            GameManager.P2healthAmount = 0;
            SceneManager. LoadScene(24);
+           GameOver();
         }
 
         if(GameManager.P1healthAmount <= 0)
         {
            GameManager.P1healthAmount = 0;
            SceneManager. LoadScene(25);
+           GameOver();
         }
 
           if(GameManager.p1mana == 100)
@@ -50,7 +53,10 @@ void Update()
 
 }
 
-
+public void GameOver()
+{
+  Gameoverscript.Setup();  
+}
 
 
 
