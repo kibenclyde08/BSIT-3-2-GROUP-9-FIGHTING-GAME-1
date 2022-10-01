@@ -6,7 +6,18 @@ using UnityEngine.SceneManagement;
 using TMPro;
 public class attack : MonoBehaviour
 {
- 
+    public Button p1specialbutton;
+    public Button p2specialbutton;
+
+void Start()
+{
+  p1specialbutton.enabled = false;
+  p2specialbutton.enabled = false;     
+}
+
+
+
+
 void Update()
 {
        if(GameManager.P2healthAmount <= 0)
@@ -19,6 +30,22 @@ void Update()
         {
            GameManager.P1healthAmount = 0;
            SceneManager. LoadScene(25);
+        }
+
+          if(GameManager.p1mana == 100)
+        {
+            p1specialbutton.enabled = true;          
+        }else
+        {
+            p1specialbutton.enabled = false;
+        }
+
+           if(GameManager.p2mana == 100)
+        {  
+            p2specialbutton.enabled = true;          
+        }else
+        {
+            p2specialbutton.enabled = false;
         }
 
 }
@@ -91,6 +118,7 @@ public void P1highkick()
 public void P1specialattack()
 {                   
         GameManager.P2healthAmount -= 25f;
+        GameManager.p1mana -= 100;
         SceneManager. LoadScene(10);
         Debug.Log("Attack Success");      
 }    
@@ -159,6 +187,7 @@ public void P2highkick()
 public void P2specialattack()
 {                   
         GameManager.P1healthAmount -= 25f;
+        GameManager.p2mana -= 100;
         SceneManager. LoadScene(15);
         Debug.Log("Attack Success"); 
     
