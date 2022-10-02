@@ -24,6 +24,7 @@ void Update()
        if(GameManager.P2healthAmount <= 0)
         {
            GameManager.P2healthAmount = 0;
+           new WaitForSeconds(6);
            SceneManager. LoadScene(24);
            GameOver();
         }
@@ -31,6 +32,7 @@ void Update()
         if(GameManager.P1healthAmount <= 0)
         {
            GameManager.P1healthAmount = 0;
+           new WaitForSeconds(6);
            SceneManager. LoadScene(25);
            GameOver();
         }
