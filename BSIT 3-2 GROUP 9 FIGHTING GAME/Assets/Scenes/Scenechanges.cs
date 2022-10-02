@@ -21,5 +21,10 @@ public class Scenechanges : MonoBehaviour
     {
         SceneManager.LoadScene(4);
     }
+
+     public void gobacktomenu()
+    {
+        SceneManager.LoadScene(2);
+    }
 }
 

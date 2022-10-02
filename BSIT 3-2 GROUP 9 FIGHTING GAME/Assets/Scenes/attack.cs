@@ -6,12 +6,62 @@ using UnityEngine.SceneManagement;
 using TMPro;
 public class attack : MonoBehaviour
 {
+    public Gameoverscript Gameoverscript;
+    public Button p1specialbutton;
+    public Button p2specialbutton;
+   
+void Start()
+{
+  p1specialbutton.enabled = false;
+  p2specialbutton.enabled = false;     
+}
 
-    // Start is called before the first frame update
 
 
- 
- 
+
+void Update()
+{
+       if(GameManager.P2healthAmount <= 0)
+        {
+           GameManager.P2healthAmount = 0;
+           new WaitForSeconds(6);
+           SceneManager. LoadScene(24);
+           GameOver();
+        }
+
+        if(GameManager.P1healthAmount <= 0)
+        {
+           GameManager.P1healthAmount = 0;
+           new WaitForSeconds(6);
+           SceneManager. LoadScene(25);
+           GameOver();
+        }
+
+          if(GameManager.p1mana == 100)
+        {
+            p1specialbutton.enabled = true;          
+        }else
+        {
+            p1specialbutton.enabled = false;
+        }
+
+           if(GameManager.p2mana == 100)
+        {  
+            p2specialbutton.enabled = true;          
+        }else
+        {
+            p2specialbutton.enabled = false;
+        }
+
+}
+
+public void GameOver()
+{
+  Gameoverscript.Setup();  
+}
+
+
+
 public void P1lowpunch(){
     int p1lp, accuracyp1 = 75;
     p1lp = Random.Range(0,100);
@@ -24,6 +74,7 @@ public void P1lowpunch(){
          SceneManager. LoadScene(16);
         Debug.Log("Attack Missed");
      }
+
     }
 
     public void P1highpunch(){
@@ -75,9 +126,9 @@ public void P1highkick()
 public void P1specialattack()
 {                   
         GameManager.P2healthAmount -= 25f;
+        GameManager.p1mana -= 100;
         SceneManager. LoadScene(10);
-        Debug.Log("Attack Success"); 
-    
+        Debug.Log("Attack Success");      
 }    
 
 
@@ -144,11 +195,12 @@ public void P2highkick()
 public void P2specialattack()
 {                   
         GameManager.P1healthAmount -= 25f;
+        GameManager.p2mana -= 100;
         SceneManager. LoadScene(15);
         Debug.Log("Attack Success"); 
     
 }   
  
- 
+
  
 }

@@ -1713,6 +1713,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6552026490635333456, guid: cf6391f7b5285a7489d52df9de0ff949, type: 3}
+      propertyPath: p1specialbutton
+      value: 
+      objectReference: {fileID: 644543660}
+    - target: {fileID: 6552026490635333456, guid: cf6391f7b5285a7489d52df9de0ff949, type: 3}
+      propertyPath: p2specialbutton
+      value: 
+      objectReference: {fileID: 911911408567594268, guid: b44077b73fec4e44fb8a2bc91c8a6c9d, type: 3}
     - target: {fileID: 6552026490635333457, guid: cf6391f7b5285a7489d52df9de0ff949, type: 3}
       propertyPath: m_RootOrder
       value: 5
